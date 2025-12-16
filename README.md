@@ -17,10 +17,10 @@ A modular, production-ready cart and checkout system for Next.js 16+ with TypeSc
 
 ```bash
 # Add .npmrc to your project root (one-time setup)
-echo "@barad:registry=https://npm.pkg.github.com" >> .npmrc
+echo "@baraddmarketing:registry=https://npm.pkg.github.com" >> .npmrc
 
 # Install the package
-npm install @barad/cart-checkout
+npm install @baraddmarketing/cart-checkout
 ```
 
 ### Manual copy
@@ -33,7 +33,7 @@ Alternatively, copy the entire `cart_checkout` folder into your project and upda
 
 ```tsx
 // app/layout.tsx
-import { CartProvider, CartDrawer } from '@barad/cart-checkout';
+import { CartProvider, CartDrawer } from '@baraddmarketing/cart-checkout';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -53,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 ```tsx
 // components/Header.tsx
-import { CartIcon } from '@barad/cart-checkout';
+import { CartIcon } from '@baraddmarketing/cart-checkout';
 
 export function Header() {
   return (
@@ -71,7 +71,7 @@ export function Header() {
 
 ```tsx
 // app/products/[id]/page.tsx
-import { AddToCartButton } from '@barad/cart-checkout';
+import { AddToCartButton } from '@baraddmarketing/cart-checkout';
 
 export default function ProductPage() {
   const product = {
@@ -206,7 +206,7 @@ Complete checkout form with shipping/billing address collection.
 Access cart state and actions from any component.
 
 ```tsx
-import { useCart } from '@barad/cart-checkout';
+import { useCart } from '@baraddmarketing/cart-checkout';
 
 function MyComponent() {
   const {
@@ -358,7 +358,7 @@ export function calculateTax(subtotal: number): number {
 ### Price Format
 
 ```typescript
-import { formatPrice } from '@barad/cart-checkout';
+import { formatPrice } from '@baraddmarketing/cart-checkout';
 
 formatPrice(29.99, 'USD', 'en-US'); // "$29.99"
 formatPrice(29.99, 'EUR', 'de-DE'); // "29,99 €"

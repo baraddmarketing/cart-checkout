@@ -1,5 +1,5 @@
 {
-  "name": "@barad/cart-checkout",
+  "name": "@baraddmarketing/cart-checkout",
   "version": "1.0.0",
   "description": "Modular e-commerce cart and checkout system for Next.js 16+ with TypeScript and Tailwind CSS",
   "main": "dist/index.js",
@@ -58,7 +58,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Barad/cart-checkout.git"
+    "url": "git+https://github.com/baraddmarketing/cart-checkout.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
