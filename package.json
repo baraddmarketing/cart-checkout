@@ -7,29 +7,29 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./components": {
+      "types": "./dist/components/cart/index.d.ts",
       "import": "./dist/components/cart/index.mjs",
-      "require": "./dist/components/cart/index.js",
-      "types": "./dist/components/cart/index.d.ts"
+      "require": "./dist/components/cart/index.js"
     },
     "./context": {
+      "types": "./dist/context/CartContext.d.ts",
       "import": "./dist/context/CartContext.mjs",
-      "require": "./dist/context/CartContext.js",
-      "types": "./dist/context/CartContext.d.ts"
+      "require": "./dist/context/CartContext.js"
     },
     "./hooks": {
+      "types": "./dist/hooks/useCart.d.ts",
       "import": "./dist/hooks/useCart.mjs",
-      "require": "./dist/hooks/useCart.js",
-      "types": "./dist/hooks/useCart.d.ts"
+      "require": "./dist/hooks/useCart.js"
     },
     "./utils": {
+      "types": "./dist/lib/cart-utils.d.ts",
       "import": "./dist/lib/cart-utils.mjs",
-      "require": "./dist/lib/cart-utils.js",
-      "types": "./dist/lib/cart-utils.d.ts"
+      "require": "./dist/lib/cart-utils.js"
     },
     "./types": {
       "types": "./dist/types/cart.d.ts"
